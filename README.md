@@ -8,7 +8,7 @@
 
 ## Requirements
 
-Tnstall Tampermonkey for your browser - [google chrome](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo?hl=en), [other browsers](https://www.tampermonkey.net/?ext=dhdg&browser=chrome)
+Install Tampermonkey for your browser - [google chrome](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo?hl=en), [other browsers](https://www.tampermonkey.net/?ext=dhdg&browser=chrome)
 
 
 ## Install
