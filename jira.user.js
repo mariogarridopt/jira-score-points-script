@@ -10,7 +10,7 @@
 // @grant        none
 // @version      1
 // @downloadURL  https://github.com/mariogarridopt/jira-score-points-script/raw/master/jira.user.js
-// @updateURL https://github.com/mariogarridopt/jira-score-points-script/raw/master/jira.meta.js
+// @updateURL    https://github.com/mariogarridopt/jira-score-points-script/raw/master/jira.meta.js
 // ==/UserScript==
 
 // Github:       https://github.com/mariogarridopt/
