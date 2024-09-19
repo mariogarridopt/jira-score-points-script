@@ -93,7 +93,6 @@
             name = name.split(" ").slice(0, 1).join(" "); // extract first name
 
             if (typeof usersData[name] === 'undefined') {
-                console.log("404 NOT FOUND!")
                 continue;
             }
 
