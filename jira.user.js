@@ -1,13 +1,19 @@
 // ==UserScript==
-// @name         Jira Points p/ User
-// @namespace    http://tampermonkey.net/
-// @version      1.0.0
-// @description  try to take over the world!
+// @name         Jira Points
+// @description  Show total amount of points per user in JIRA
+// @namespace    https://github.com/mariogarridopt/
+// @homepageURL  https://github.com/mariogarridopt/
+// @supportURL   https://github.com/mariogarridopt/jira-score-points-script/issues
 // @author       Mario Garrido
 // @match        https://jira.tuigroup.com/*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=tuigroup.com
 // @grant        none
+// @version      1
+// @downloadURL  https://github.com/mariogarridopt/jira-score-points-script/raw/master/jira.user.js
+// @updateURL https://github.com/mariogarridopt/jira-score-points-script/raw/master/jira.meta.js
 // ==/UserScript==
+
+// Github:       https://github.com/mariogarridopt/
 
 (function(document) {
     'use strict';
