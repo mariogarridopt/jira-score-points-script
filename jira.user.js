@@ -8,7 +8,7 @@
 // @match        https://jira.tuigroup.com/*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=tuigroup.com
 // @grant        none
-// @version      1
+// @version      2
 // @downloadURL  https://github.com/mariogarridopt/jira-score-points-script/raw/master/jira.user.js
 // @updateURL    https://github.com/mariogarridopt/jira-score-points-script/raw/master/jira.meta.js
 // ==/UserScript==
@@ -20,6 +20,7 @@
 
     function identifyTheUsers() {
         const excludedNames = [
+            "TECH DEBT",
             "users admin [on/off boarding]",
             "notreadytostart",
             "only my issues",

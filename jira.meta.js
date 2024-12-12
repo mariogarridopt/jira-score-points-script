@@ -8,5 +8,5 @@
 // @match        https://jira.tuigroup.com/*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=tuigroup.com
 // @grant        none
-// @version      1
+// @version      2
 // ==/UserScript==
