@@ -18,17 +18,18 @@
 (function(document) {
     'use strict';
 
+    const excludedNames = [
+        "tech debt",
+        "users admin [on/off boarding]",
+        "notreadytostart",
+        "only my issues",
+        "readytostart",
+        "security",
+        "recently updated",
+        "… show fewer"
+    ];
+
     function identifyTheUsers() {
-        const excludedNames = [
-            "tech debt",
-            "users admin [on/off boarding]",
-            "notreadytostart",
-            "only my issues",
-            "readytostart",
-            "security",
-            "recently updated",
-            "… show fewer"
-        ];
         const filterList = document.querySelectorAll("#js-work-quickfilters > dd > a");
         var users = {}
 
@@ -45,7 +46,6 @@
                 allpoints: 0
             };
         }
-
         return users
     }
 
@@ -123,13 +123,15 @@
     function updateOnChanges(userList) {
         setInterval(function() {
             const regex = /^[A-Za-z]+ \(\d+\/\d+\)$/;
-            const sample = document.querySelector("#js-work-quickfilters > dd:nth-child(3) > a").innerHTML;
+            const sample = document.querySelector("#js-work-quickfilters > dd:nth-child(3) > a").innerHTML.toLowerCase();
 
-            if (!regex.test(sample)) {
-                userList = sumDonePoints(userList);
-                userList = sumAllPoints(userList);
-                if(userList){
-                    displayPoints(userList);
+            if (!excludedNames.includes(sample.toLowerCase())) {
+                if (!regex.test(sample)) {
+                    userList = sumDonePoints(userList);
+                    userList = sumAllPoints(userList);
+                    if(userList){
+                        displayPoints(userList);
+                    }
                 }
             }
         }, 1000);
