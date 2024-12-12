@@ -20,7 +20,7 @@
 
     function identifyTheUsers() {
         const excludedNames = [
-            "TECH DEBT",
+            "tech debt",
             "users admin [on/off boarding]",
             "notreadytostart",
             "only my issues",
